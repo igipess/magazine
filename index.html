@@ -283,7 +283,7 @@ function loadApp() {
 			break;
 			case esc:
 				
-				$('.magazine-viewport').zoom('zoomOut');	
+				$('.magazine-viewport').zoom('zoomOut');
 				e.preventDefault();
 
 			break;
@@ -431,16 +431,16 @@ function loadApp() {
 
 // Zoom icon
 
- $('.zoom-icon').bind('mouseover', function() { 
+ $('.zoom-icon').bind('mouseover', function() {
  	
  	if ($(this).hasClass('zoom-icon-in'))
  		$(this).addClass('zoom-icon-in-hover');
 
  	if ($(this).hasClass('zoom-icon-out'))
  		$(this).addClass('zoom-icon-out-hover');
- 
- }).bind('mouseout', function() { 
- 	
+
+ }).bind('mouseout', function() {
+
  	 if ($(this).hasClass('zoom-icon-in'))
  		$(this).removeClass('zoom-icon-in-hover');
  	
@@ -463,9 +463,9 @@ function loadApp() {
 
 yepnope({
 	test : Modernizr.csstransforms,
-	yep: ['../../lib/turn.js'],
-	nope: ['../../lib/turn.html4.min.js'],
-	both: ['../../lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
+	yep: ['https://igipess.github.io/lib/turn.js'],
+	nope: ['https://igipess.github.io/lib/turn.html4.min.js'],
+	both: ['https://igipess.github.io/lib/zoom.min.js', 'js/magazine.js', 'css/magazine.css'],
 	complete: loadApp
 });
 
